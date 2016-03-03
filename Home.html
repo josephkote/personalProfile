@@ -3,39 +3,6 @@
 <html>
   <head>
     <style>
-<style>
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 40px;
-}
-</style>
-    
 img{size="width="210px" "height=139px;"}
     </style>
    <meta charset="utf-8"/>
@@ -87,7 +54,63 @@ li a:hover:not(.active) {
 
 <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
 
-  </style>     
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+        cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+  </style>  
+  
+  <style>
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}	
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+
 </head>
   <body>
       <header>
@@ -134,6 +157,34 @@ h3>Using CSS to style a HTML Form</h3>
   
     <input type="submit" value="Submit">
   </form>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://assets.entrepreneur.com/content/16x9/822/20160118175433-ehang-184-drone.jpeg">
+    <img src="https://assets.entrepreneur.com/content/16x9/822/20160118175433-ehang-184-drone.jpeg" width="300" height="200">
+  </a>
+  <div class="desc">EHang 184</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="http://media.bizj.us/view/img/7898812/129landa-eternalcreative*800xx1698-955-0-88.jpg">
+    <img src="http://media.bizj.us/view/img/7898812/129landa-eternalcreative*800xx1698-955-0-88.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">5 Tech Predictions for 2016</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="http://sc01.alicdn.com/kf/HTB1XOusKXXXXXbpXpXXq6xXFXXX0/2016-new-technology-two-wheeled-electric-scooter.jpg">
+    <img src="http://sc01.alicdn.com/kf/HTB1XOusKXXXXXbpXpXXq6xXFXXX0/2016-new-technology-two-wheeled-electric-scooter.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">2016 new technology two wheeled electric scooter level board scooter with bluetooth</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
 </div>
 
 
