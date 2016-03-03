@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8"/>
+    <title>comment.html</title>
+  <style type="text/css">
+<body>  
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+  
+ <p><h2>OUR HISTORY</h2></p>&nbsp;&nbsp;
+
+ <p><h4>Advancing forensic science since 1995</h4></p>&nbsp;&nbsp;
+ <p>In 1995, members of the American Society of Crime Laboratory Directors (ASCLD) realized the need for an organization with a focus on elevating the quality and consistency of forensic services in our nation’s crime laboratories. Out of that realization was born the National Forensic Science Technology Center (NFSTC), a nonprofit organization with one staff person, $1500 and a charge to ‘do good things’ for the industry. Offices for NFSTC were established at St. Petersburg College, in St. Petersburg, Florida. The early years were focused on laying the groundwork for future programs.</p>
+
+<p>In 1999, NFSTC received congressional earmark funding and, working closely with the Office of Science and Technology, a division of the National Institute of Justice, through a Cooperative Agreement dramatically expanded forensic products and services at no cost to all publicly funded crime laboratories in the U.S. With funding through this agreement, NFSTC relocated its offices in May 2000 to the Young-Rainey STAR Center in Largo, Florida. In May 2014, the offices moved to Bardmoor Palms, around the corner.</p>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+
+
