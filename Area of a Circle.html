@@ -1,0 +1,34 @@
+
+ 
+!DOCTYPE html>
+<html>
+    <head>
+        <title>Area of a Circle</title>
+    </head>
+    <body>
+        <p>Please enter the radius below</p>
+        <input type="text" id="radius">
+        <p id="errorMessage"></p>
+        <script>
+            function calcArea(){
+                var radius;
+                var area;
+                
+                radius = document.getElementById('radius').value;
+                
+                if (radius!null){
+                    area = 3.142 * radius * radius;
+                    document.write(area);
+                }else{
+                    document.write(document.getElementById("errorMessage").innerHTML = "Please put in a radius value!");
+                    //document.getElementById("errorMessage").innerHTML = "Please put in a radius value!"
+                }
+
+            }
+                
+        </script>
+        
+        <button type="button" onclick="calcArea()">Area</button>
+    </body>
+</html>
+ 
